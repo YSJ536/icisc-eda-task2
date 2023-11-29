@@ -18,7 +18,7 @@ benchmark为训练集和测试集
 
 之后使用命令
 
-*python DQN.py input_file*
+*python DQN.py input_file*  
 input_file是数据集（aig文件）
 ## 算法说明
 
