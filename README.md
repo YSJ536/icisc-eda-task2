@@ -15,7 +15,8 @@ benchmark为训练集和测试集
 
 之后使用命令
 
-*python DQN.py <args>*
+*python DQN.py input_file*
+input_file是数据集（aig文件）
 ## 算法说明
 
 本算法使用了DQN强化学习优化组合逻辑，以优化算子为动作空间、电路特征为状态空间，有两个网络：主网络和目标网络，每迭代n次会将主网络的权重更新到目标网络
