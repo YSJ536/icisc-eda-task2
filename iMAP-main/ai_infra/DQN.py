@@ -36,20 +36,6 @@ class Demo(object):
     def read_aig(self):
         self.engine.read()
 
-    # def run(self):
-    #     self.engine.read()
-    #     opt_round = 5
-    #     while opt_round > 0:
-    #         self._opt_size()
-    #         self._opt_depth()
-    #         self.engine.print_stats()
-    #         opt_round -= 1
-
-    #     self.engine.map_fpga()
-    #     self.engine.add_sequence('map_fpga')
-    #     self.engine.print_stats(type=1)
-
-    #     self.engine.write()
 
 
 class HistoryDemo(Demo):
@@ -73,34 +59,7 @@ class HistoryDemo(Demo):
         self.engine.history(replace=idx)
         self.engine.add_sequence(f'history -r {idx}')
     
-    # def run(self):
-    #     self.engine.read()
-    #     opt_round = 10
-    #     current_size  = self.engine.get_aig_size()
-    #     current_depth = self.engine.get_aig_depth()
-    #     while opt_round > 0:
-    #         self._opt_size()
-    #         self._opt_lut()
-    #         self._opt_depth()
-    #         size = self.engine.get_aig_size()
-    #         depth = self.engine.get_aig_depth()
-    #         if depth < current_depth:
-    #             if self._history_full():
-    #                 self._history_replace(-1)
-    #             else:
-    #                 self._history_add()
-    #         elif depth == current_depth and size < current_size:
-    #             if self._history_empty():
-    #                 self._history_add()
-
-    #         current_size = size
-    #         current_depth = depth
-    #         opt_round -= 1
-
-    #     self.engine.map_fpga(type=1)
-    #     self.engine.add_sequence('map_fpga')
-
-    #     self.engine.write()
+    
 # 假设 N 是从aig文件中提取的特征数量
 #class DQNTRAINer
 demo = Demo(sys.argv[1])
