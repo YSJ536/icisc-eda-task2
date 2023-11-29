@@ -3,7 +3,7 @@
 
 imap为赛题官方平台，提供了几种优化算子优化组合逻辑  
 imap平台：
-> https://github.com/oscc-project/iMAP
+> https://github.com/oscc-project/iMAP  
 benchmark为训练集和测试集
 
 
