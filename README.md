@@ -2,6 +2,8 @@
 此文件是基于2023年集成电路EDA设计精英挑战赛-赛题二
 
 imap为赛题官方平台，提供了几种优化算子优化组合逻辑  
+imap平台：
+> https://github.com/oscc-project/iMAP
 benchmark为训练集和测试集
 
 
